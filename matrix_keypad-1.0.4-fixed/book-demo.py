@@ -19,6 +19,10 @@ from matrix_keypad.matrix_keypad_RPi_GPIO import keypad
 from time import sleep
 from sys import exit
 
+# Silence the GPIO warnings.
+import RPi.GPIO as GPIO
+GPIO.setwarnings(False)
+
 # Initialize the keypad class. Using the **optional** variable to change it to a 4x4 keypad
 kp = keypad(columnCount = 4)
 
