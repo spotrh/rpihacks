@@ -23,8 +23,8 @@ from sys import exit
 import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
 
-# Initialize the keypad class. Using the **optional** variable to change it to a 4x4 keypad
-kp = keypad(columnCount = 4)
+# Initialize the keypad class. Setting the column count to 3, for our 4x3 keypad
+kp = keypad(columnCount = 3)
 
 # Setup variables
 attempt = "0000"
