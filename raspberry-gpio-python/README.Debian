@@ -1,0 +1,37 @@
+# This README file gives a very rough idea of how to build Debian
+# packages for this module
+# There may be dependencies I've forgotten to mention!
+# Version numbers may change as well!
+
+VERSION=0.5.3a
+export DEBFULLNAME="Ben Croston"
+export DEBEMAIL="ben@croston.org"
+
+# install debian package build dependencies
+# sudo apt-get install devscripts build-essential fakeroot dh-make
+
+# create build area
+mkdir ~/temp
+cd ~/temp
+
+# get development source
+hg clone https://code.google.com/p/raspberry-gpio-python/
+cd raspberry-gpio-python
+
+# create tarball (in dist directory)
+python setup.py sdist
+
+cd ~/temp
+cp raspberry-gpio-python/dist/*.gz .
+tar xvfz RPi.GPIO-$VERSION.tar.gz
+mv RPi.GPIO-$VERSION rpi.gpio-$VERSION
+cd rpi.gpio-$VERSION
+dh_make -s -f ../RPi.GPIO-$VERSION.tar.gz
+
+# delete debian directory and replace it with my copy (from hg)
+rm -rf debian
+cp -a ~/temp/raspberry-gpio-python/debian .
+
+# build .deb files
+debuild -us -uc
+debuild clean
