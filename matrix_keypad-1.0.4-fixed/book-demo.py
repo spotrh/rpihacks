@@ -1,4 +1,18 @@
 #!/usr/bin/python
+# This code is based on Chris Crumpacker's example code, but with the bugs fixed.
+# His code is GPLv3+. To keep things simple, this code is also GPLv3+.
+# Copyright (C) 2013 Tom Callaway <spotrh@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from matrix_keypad.matrix_keypad_RPi_GPIO import keypad
 
@@ -10,7 +24,7 @@ kp = keypad(columnCount = 4)
 
 # Setup variables
 attempt = "0000"
-passcode = "1912"
+passcode = "8675"
 counter = 0
 
 # Loop while waiting for a keypress
