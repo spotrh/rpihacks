@@ -3,6 +3,15 @@ rpihacks
 
 This repository contains code and config files to go along with the Raspberry Pi Hacks book.
 
+== Software Copies ==
+
+For convenience purposes, we have copied some upstream projects into this repository.
+
+=== raspberry-gpio-python
+Python library for GPIO access on a Raspberry Pi
+http://code.google.com/p/raspberry-gpio-python/
+License: MIT
+
 == Licenses ==
 
 === CODE ===
