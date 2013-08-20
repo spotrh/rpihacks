@@ -27,6 +27,8 @@ attempt = "0000"
 passcode = "8675"
 counter = 0
 
+print 'Enter your four digit secret code into the numeric keypad!'
+
 # Loop while waiting for a keypress
 while True:
 	# Loop to get a pressed digit
