@@ -8,8 +8,8 @@ This repository contains code and config files to go along with the Raspberry Pi
 For convenience purposes, we have copied some upstream projects into this repository.
 
 === raspberry-gpio-python
-Python library for GPIO access on a Raspberry Pi
-http://code.google.com/p/raspberry-gpio-python/
+Python library for GPIO access on a Raspberry Pi<BR>
+http://code.google.com/p/raspberry-gpio-python/<BR>
 License: MIT
 
 == Licenses ==
