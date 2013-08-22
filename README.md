@@ -12,6 +12,15 @@ Python library for GPIO access on a Raspberry Pi<BR>
 http://code.google.com/p/raspberry-gpio-python/<BR>
 License: MIT
 
+=== matrix_keypad-1.0.4-fixed ===<BR>
+Python module for interfacing with the Matrix numeric keypads.
+https://pypi.python.org/pypi/matrix_keypad
+License: GPLv3+
+
+Note: This code has been modified in order to make it work properly, the 
+original code did not work at all. Any copyrightable changes are under the
+GPLv3+ license (same license as original work).
+
 == Licenses ==
 
 === CODE ===
