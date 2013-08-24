@@ -13,13 +13,22 @@ http://code.google.com/p/raspberry-gpio-python/<BR>
 License: MIT
 
 === matrix_keypad-1.0.4-fixed ===<BR>
-Python module for interfacing with the Matrix numeric keypads.
-https://pypi.python.org/pypi/matrix_keypad
+Python module for interfacing with the Matrix numeric keypads.<BR>
+https://pypi.python.org/pypi/matrix_keypad<BR>
 License: GPLv3+
 
 Note: This code has been modified in order to make it work properly, the 
 original code did not work at all. Any copyrightable changes are under the
 GPLv3+ license (same license as original work).
+
+=== Adafruit_CharLCDPlate === <BR>
+Python module for interfacing with the Pi LCD Plate.<BR>
+https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code<BR>
+License: BSD
+
+Note: We have added an additional file into this directory 
+(LCD-pi-plate-print-ip-addrs.py) for one of the hacks in our book.
+It is derived loosely from LCDtest.py, but is licensed under MIT.
 
 == Licenses ==
 
