@@ -30,6 +30,14 @@ Note: We have added an additional file into this directory
 (LCD-pi-plate-print-ip-addrs.py) for one of the hacks in our book.
 It is derived loosely from LCDtest.py, but is licensed under MIT.
 
+=== Adafruit_DHTDriver === <BR>
+C code for reading the temperature and humidity from the DHT11/22 chips
+via the BCM2835 GPIO.
+https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code<BR>
+License: BSD<BR>
+
+Note: This copy is unmodified, and included here solely for convenience.
+
 == Licenses ==
 
 === CODE ===
