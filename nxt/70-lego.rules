@@ -1,0 +1,2 @@
+BUS=="usb", ATTRS{idVendor}=="0694", GROUP="lego", MODE="0660"
+SUBSYSTEM=="usb", ATTR{idVendor}=="0694", ATTR{idProduct}=="0002", MODE="666"

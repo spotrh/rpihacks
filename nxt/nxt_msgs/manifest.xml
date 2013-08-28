@@ -1,0 +1,15 @@
+<package>
+  <description brief="nxt_msgs">
+    The nxt_msgs package contains a set of messages to publish data coming from various NXT sensor.
+
+  </description>
+  <author>Wim Meeussen</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nxt_msgs</url>
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+

@@ -1,0 +1,18 @@
+--- src/nxt/direct.py	2010-06-04 16:40:29.000000000 -0700
++++ /u/mwise/external_repos/foote-ros-pkg/nxt/trunk/nxt_python/src/nxt/direct.py	2010-06-04 16:02:10.000000000 -0700
+@@ -13,6 +13,7 @@
+ # GNU General Public License for more details.
+ 
+ 'Use for direct communication with the NXT ***EXTREMELY ADVANCED USERS ONLY***'
++import time
+ 
+ def _create(opcode):
+ 	'Create a simple direct telegram'
+@@ -152,6 +153,7 @@
+ 
+ def ls_write(opcode, port, tx_data, rx_bytes):
+ 	'Write a low-speed command to a sensor (ultrasonic)'
++        time.sleep(0.020)
+ 	tgram = _create(opcode)
+ 	tgram.add_u8(port)
+ 	tgram.add_u8(len(tx_data))

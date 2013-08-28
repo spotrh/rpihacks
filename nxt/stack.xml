@@ -1,0 +1,17 @@
+<stack>
+  <description brief="A stack for interacting with Lego NXT">
+    This stack has basic interfaces for interacting with ROS and NXT. The software in this 
+    stack is intended to run on top of the default NXT firmware provided by lego. 
+  </description>
+  <author>Maintained by Tully Foote, Wim Meeussen, and Melonee Wise</author>
+  <license>BSD</license>  
+  <review status="experimental" notes=""/>
+  <url>http://ros.org/wiki/nxt</url>
+  <depend stack="common_msgs" /> <!-- nav_msgs, geometry_msgs, sensor_msgs -->
+  <depend stack="geometry" /> <!-- tf, tf_conversions -->
+  <depend stack="orocos_kinematics_dynamics" /> <!-- kdl -->
+  <depend stack="ros" />
+  <depend stack="ros_comm" /> <!-- std_msgs, rospy, roscpp -->
+  <depend stack="visualization" /> <!-- rviz -->
+
+</stack>

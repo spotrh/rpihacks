@@ -1,0 +1,15 @@
+name: nxt_rviz_plugin
+library: nxt_rviz_plugin
+displays:
+  -
+    class_name: nxt_rviz_plugin::NXTUltrasonicDisplay
+    display_name: NXTUltrasonicDisplay
+    description: |
+      Displays data from a nxt_msgs::Range message as a cone.
+  -
+    class_name: nxt_rviz_plugin::NXTColorDisplay
+    display_name: NXTColorDisplay
+    description: |
+      Displays data from a nxt_msgs::Color message as a cylinder of color.
+
+

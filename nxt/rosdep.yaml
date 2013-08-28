@@ -1,0 +1,21 @@
+libusb:
+  ubuntu: libusb-dev
+  debian: libusb-dev
+  arch: libusb
+  fedora: libusb-devel
+  rhel: libusb-devel
+  gentoo: dev-libs/libusb
+python-bluez:
+  ubuntu: python-bluez
+  debian: python-bluez
+  arch: python-pybluez
+  fedora: pybluez
+  rhel: python-bluez
+  gentoo: dev-python/pybluez
+python-usb:
+  ubuntu: python-usb
+  debian: python-usb
+  arch: python-pyusb
+  fedora: pyusb
+  rhel: python-usb
+  gentoo: dev-python/pyusb

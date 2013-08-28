@@ -1,0 +1,27 @@
+<package>
+  <description brief="nxt_python">
+    This package automatically downloads version 1.1.2 of the
+    <a href="http://code.google.com/p/nxt-python">NXT-python</a>
+    library. We intend to upgrade to the 2.0.x version of this library
+    when it becomes available. NXT-python is a libraray for
+    controlling a LEGO NXT robot using the Python programming
+    language. It can communicate using either USB or Bluetooth. It is
+    available under the Free Software Foundation's GPL license.
+  </description>
+  <author>Douglas P Lau.</author>
+  <license>BSD</license>
+  <review status="3rdparty" notes=""/>
+  <url>http://ros.org/wiki/nxt_python</url>
+  <export>
+    <doxymaker external="http://code.google.com/p/nxt-python"/>
+    <rosdoc config="rosdoc.yaml"/>
+  </export>
+
+  <depend package="rospy" />
+  <rosdep name="python-usb"/>
+  <rosdep name="python-bluez"/>
+  <rosdep name="unzip"/>
+
+</package>
+
+

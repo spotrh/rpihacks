@@ -1,0 +1,27 @@
+<package>
+  <description brief="nxt_controllers">
+    The nxt_controllers package provides a number of Python-based
+     controllers for two-wheeled diff drive robots. The base
+     controllers allows you to send velocity commands to a diff drive
+     base, while the base odometry tracks the pose of a diff drive
+     robot. The nxt_controllers package also contains a general
+     purpose joint position controller that commnads a joint to a
+     desired position by sending effort commands to the joint and
+     reading the joint encoders.
+  </description>
+  <author>Wim Meeussen</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nxt_controllers</url>
+
+  <depend package="rospy" />
+  <depend package="sensor_msgs" />
+  <depend package="tf" />
+  <depend package="tf_conversions" />
+  <depend package="nxt_msgs" />
+  <depend package="nav_msgs" />
+  <!--depend package="kdl" /-->
+
+</package>
+
+

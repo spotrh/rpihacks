@@ -1,0 +1,20 @@
+<package>
+  <description brief="nxt_lxf2urdf">
+
+     nxt_lxf2urdf converts a <a href="http://ldd.lego.com/">LEGO
+     Digital Design file (*.lxf)</a> 
+     to <a href="http://ros.org/wiki/urdf">urdf </a>.  nxt_lxf2urdf
+     needs a (*.lxf) and a (*.ldr) file for completing the conversion
+     from lxf to urdf.  It also has the ldraw.xml file that is in the
+     assests folder of the LEGO Digital Designer which has been
+     modified to add more parts.
+
+  </description>
+  <author>Melonee Wise</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nxt_lxf2urdf</url>
+
+</package>
+
+

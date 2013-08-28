@@ -1,0 +1,24 @@
+<package>
+  <description brief="nxt_ros">
+     The nxt_ros package provides the bindings between the NXT world
+     and the ROS world.  This package will create a ROS topic for each
+     NXT sensor, and publish the sensor's data on this topic. The
+     package also creates a topic for each NXT motor, which allows you
+     to command the motor from ROS. The nxt_ros bindings talk directly
+     to the NXT brick, either over USB or over Bluetooth (note that
+     the Bluetooth connection is currently too slow to be very
+     useful).  Binding an NXT robot to ROS only requires a single
+     configuration file.
+  </description>
+  <author>Wim Meeussen</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nxt_ros</url>
+  <depend package="rospy"/>
+  <depend package="nxt_python"/>
+  <!--depend package="kdl"/-->
+  <depend package="sensor_msgs" /> 
+  <depend package="nxt_msgs" /> 
+</package>
+
+

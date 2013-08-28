@@ -32,9 +32,17 @@ It is derived loosely from LCDtest.py, but is licensed under MIT.
 
 === Adafruit_DHTDriver === <BR>
 C code for reading the temperature and humidity from the DHT11/22 chips
-via the BCM2835 GPIO.
+via the BCM2835 GPIO.<BR>
 https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code<BR>
 License: BSD<BR>
+
+Note: This copy is unmodified, and included here solely for convenience.
+
+=== nxt === <BR>
+Bindings to connect the NXT Mindstorms to ROS, with added support for
+groovy and Raspberry Pi (Raspbian).<BR>
+https://github.com/maxsieber<BR>
+License: BSD <BR>
 
 Note: This copy is unmodified, and included here solely for convenience.
 

@@ -1,0 +1,38 @@
+--- src/nxt/sensor.py	2010-01-14 10:03:48.000000000 -0800
++++ sensor+gyro.py	2010-06-08 17:42:41.884941468 -0700
+@@ -303,3 +363,35 @@
+ 
+ 		return self.xval, self.yval, self.zval
+ 
++
++class GyroSensor(AnalogSensor):
++        'Object for gyro sensors'
++#This class is for the hitechnic gryo accelerometer. When the gryo is
++#not moving there will be a constant offset that will change with 
++#temperature and other ambient factors. It might be appropriate to 
++#write a calibration function to account for this offset.
++#
++#TODO: calibration
++
++        def __init__(self, brick, port):
++                super(GyroSensor, self).__init__(brick, port)
++                self.sensor_type = Type.ANGLE
++                self.set_input_mode()
++                self.calibration_zero = 0
++                self.calibrate()
++
++        def get_input_values(self):
++                values = self.brick.get_input_values(self.port)
++                (self.port, self.valid, self.calibrated, self.sensor_type,
++                 self.mode, self.raw_ad_value, self.normalized_ad_value,
++                self.scaled_value, self.calibrated_value) = values
++                return values
++
++        def get_sample(self):
++                self.get_input_values() 
++                return -self.scaled_value - self.zero # negative sign to make it return angular rate about z axis up.  
++        def calibrate(self):
++                self.get_input_values() 
++                self.zero = -self.scaled_value # negative sign to make it return angular rate about z axis up.  
++		 
++                
