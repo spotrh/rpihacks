@@ -33,11 +33,14 @@ find_package(wxWidgets REQUIRED)
 include(${wxWidgets_USE_FILE})
 include_directories( ${wxWidgets_INCLUDE_DIRS} )
 
+find_package(Qt4 COMPONENTS QtCore QtGui REQUIRED)
+include(${QT_USE_FILE})
+
 pkg_check_modules(OGRE OGRE)
 include_directories( ${OGRE_INCLUDE_DIRS} )
 link_directories( ${OGRE_LIBRARY_DIRS} )
 
-target_link_libraries(${PROJECT_NAME} ${wxWidgets_LIBRARIES} ${OGRE_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${wxWidgets_LIBRARIES} ${OGRE_LIBRARIES} ${QT_LIBRARIES})
 rosbuild_link_boost(${PROJECT_NAME} thread)
 
 #uncomment if you have defined messages
