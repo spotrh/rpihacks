@@ -44,7 +44,8 @@ groovy and Raspberry Pi (Raspbian).<BR>
 https://github.com/maxsieber<BR>
 License: BSD <BR>
 
-Note: This copy is unmodified, and included here solely for convenience.
+Note: This copy has some fixes for the rviz plugin to build properly.
+# Tom forked it here: https://github.com/spotrh/nxt
 
 == Licenses ==
 
