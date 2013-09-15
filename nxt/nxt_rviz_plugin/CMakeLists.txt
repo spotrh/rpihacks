@@ -21,6 +21,8 @@ set(SOURCE_FILES src/nxt_ultrasonic_display.cpp
                  src/nxt_color_display.cpp 
                  src/init.cpp)
 
+set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS")
+
 
 include(CMakeDetermineSystem)
 if(CMAKE_SYSTEM_NAME MATCHES "Darwin")

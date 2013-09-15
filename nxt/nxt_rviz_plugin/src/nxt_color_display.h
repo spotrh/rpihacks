@@ -7,12 +7,12 @@
 
 #include <nxt_msgs/Color.h>
 
+#include <boost/shared_ptr.hpp>
+
 #include <message_filters/subscriber.h>
 #include <tf/message_filter.h>
 
-#include <boost/shared_ptr.hpp>
-
-namespace ogre_tools
+namespace rviz
 {
 class Shape;
 }
@@ -33,8 +33,10 @@ namespace nxt_rviz_plugin
 class NXTColorDisplay : public rviz::Display
 {
 public:
-  NXTColorDisplay( const std::string& name, rviz::VisualizationManager* manager );
+  NXTColorDisplay();
   virtual ~NXTColorDisplay();
+
+  virtual void onInitialize();
 
   void setTopic( const std::string& topic );
   const std::string& getTopic() { return topic_; }
@@ -74,10 +76,10 @@ protected:
   uint32_t messages_received_;
 
   Ogre::SceneNode* scene_node_;
-  ogre_tools::Shape* cylinder_;      ///< Handles actually drawing the cone
+  rviz::Shape* cylinder_;      ///< Handles actually drawing the cone
 
   message_filters::Subscriber<nxt_msgs::Color> sub_;
-  tf::MessageFilter<nxt_msgs::Color> tf_filter_;
+  tf::MessageFilter<nxt_msgs::Color>* tf_filter_;
   nxt_msgs::Color::ConstPtr current_message_;
 
   rviz::ROSTopicStringPropertyWPtr topic_property_;

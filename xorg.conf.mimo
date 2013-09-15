@@ -1,0 +1,37 @@
+Section "Device"
+	Identifier "DisplayLinkDevice"
+	driver "fbdev"
+	Option "fbdev" "/dev/fb1"
+	Option "ShadowFB" "off"
+EndSection
+
+Section "Monitor"
+	Identifier "monitor"
+	Option "DPMS"
+EndSection
+
+Section "Screen"
+	Identifier "screen"
+	Device "DisplayLinkDevice"
+	Monitor "monitor"
+EndSection
+
+Section "ServerLayout"
+	Identifier "default"
+	Screen 0 "screen" 0 0
+	InputDevice "touchscreen" "CorePointer"
+	Option "BlankTime"     "0"
+        Option "StandbyTime"   "0"
+        Option "SuspendTime"   "0"
+        Option "OffTime"       "0"
+EndSection
+
+Section "InputDevice"  
+     Identifier "touchscreen"  
+     Driver "evdev"  
+     Option "Device" "/dev/input/by-id/usb-e2i_Technology__Inc._USB_Touchpanel_L000000000-event-if00"  
+     Option "DeviceName" "touchscreen"  
+     Option "ReportingMode" "Raw"  
+     Option "SendCoreEvents" "On"  
+     Option "Calibration" "449 31910 31857 988"
+EndSection 
