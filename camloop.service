@@ -1,0 +1,9 @@
+[Unit]
+Description=Camera Loop
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/camloop.sh
+
+[Install]
+WantedBy=multi-user.target

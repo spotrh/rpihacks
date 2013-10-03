@@ -1,0 +1,9 @@
+[Unit]
+Description=Christmas Light Sequence Loop
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /usr/bin/lightsequences.py
+
+[Install]
+WantedBy=multi-user.target
